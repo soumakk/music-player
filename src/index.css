@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-primary: #4a90e2;
+	--color-background: #f5f5f5;
+}
+
+html,
+body,
+#root {
+	@apply h-full;
+}

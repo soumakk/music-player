@@ -10,3 +10,8 @@ body,
 #root {
 	@apply h-full;
 }
+
+canvas {
+	position: fixed;
+	inset: 0;
+}

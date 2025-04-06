@@ -19,7 +19,7 @@ export default function VolumeControl(props: {
 	return (
 		<TooltipProvider delayDuration={0}>
 			<Tooltip>
-				<TooltipTrigger>
+				<TooltipTrigger asChild>
 					<button
 						className="flex items-center justify-center"
 						onClick={() => {

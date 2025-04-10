@@ -98,7 +98,7 @@ varying float vNoise;
 
 void main() { 
     float distortion = pnoise(position * 2. + uTime * 0.5, vec3(2.));
-    vec3 displacedPosition = position + normal * distortion * uFrequency;
+    vec3 displacedPosition = position + normal * distortion * uFrequency * 1.5;
 
     vUv = uv;
 	vNormal = normal;
@@ -241,7 +241,7 @@ export class Scene {
 		const avgFrequency =
 			this.soundDataArray.reduce((a, b) => a + b, 0) / this.soundDataArray.length
 
-		this.sphere.material.uniforms.uFrequency.value = (avgFrequency + 2) / 100
+		this.sphere.material.uniforms.uFrequency.value = (avgFrequency + 1) / 100
 
 		this.sphere.rotation.y = time * 0.0005
 		this.sphere.rotation.x = time * 0.0005

@@ -20,7 +20,7 @@ const AudioController = ({ audioRef }: { audioRef: React.RefObject<HTMLAudioElem
 	return (
 		<div>
 			<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-				<div className="py-2 px-4 rounded-full bg-zinc-800/40 border border-zinc-100/10 flex items-center gap-2">
+				<div className="py-2 px-4 rounded-full bg-zinc-800/40 border border-zinc-100/10 flex items-center gap-2 backdrop-blur-sm">
 					<div>
 						<button onClick={tooglePlay} className="flex items-center justify-center">
 							{isPlaying ? <PauseIcon /> : <PlayIcon />}

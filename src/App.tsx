@@ -19,7 +19,7 @@ function App() {
 			<canvas ref={canvasRef}></canvas>
 
 			<audio controls ref={audioRef} className="hidden">
-				<source src="/music/raanjhan.mp3" type="audio/mp3" />
+				<source src="/music/bengali-lofi.mp3" type="audio/mp3" />
 				<p>Your browser does not support the audio element.</p>
 			</audio>
 

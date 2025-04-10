@@ -21,7 +21,7 @@ export default function PlayControlSlider(props: {
 
 	return (
 		<div className="flex items-center gap-4">
-			<p className="text-white text-xs">
+			<p className="text-white text-xs whitespace-nowrap">
 				<span>{convertTimeToString(currentTime)}</span>
 				<span> / </span>
 				<span>{convertTimeToString(duration)}</span>
